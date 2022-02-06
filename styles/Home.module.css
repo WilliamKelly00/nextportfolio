@@ -25,6 +25,44 @@
   top: 3px;
 }
 
+.svgLine{
+  stroke-dasharray: 70;
+  stroke-width: 4;
+  stroke-dashoffset: 70;
+  animation: drawLine 2s linear forwards;
+}
+
+@keyframes drawLine{
+  to{
+      stroke-dashoffset: 0;
+  }
+}
+
+.awsbtn {
+  --button-default-height: 51px;
+  --button-default-font-size: 17px;
+  --button-default-border-radius: 15px;
+  --button-horizontal-padding: 40px;
+  --button-raise-level: 8px;
+  --button-hover-pressure: 0.5;
+  --transform-speed: 0.175s;
+  --button-primary-color: #1e88e5;
+  --button-primary-color-dark: #1360a4;
+  --button-primary-color-light: #ffffff;
+  --button-primary-color-hover: #187bd1;
+  --button-primary-border: none;
+  --button-secondary-color: #f2f6f9;
+  --button-secondary-color-dark: #1360a4;
+  --button-secondary-color-light: #1e88e5;
+  --button-secondary-color-hover: #e1eaf1;
+  --button-secondary-border: 2px solid #1e88e5;
+  --button-anchor-color: #0e4f88;
+  --button-anchor-color-dark: #072743;
+  --button-anchor-color-light: #ffffff;
+  --button-anchor-color-hover: #0d4a7f;
+  --button-anchor-border: none;
+  }
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
