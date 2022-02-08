@@ -175,3 +175,10 @@
     flex-direction: column;
   }
 }
+
+/* align the items such that they create a grid */
+.projectHolder{
+  margin: 0 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

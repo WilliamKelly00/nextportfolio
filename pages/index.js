@@ -28,8 +28,12 @@ export default function Home() {
       </div>
 
     <Cards/>
-    <ProjectCard  />
-    
+
+    <div className={styles.projectHolder}>
+      <ProjectCard  />
+      <ProjectCard  />
+    </div> 
+
     </div>
   )
 }
