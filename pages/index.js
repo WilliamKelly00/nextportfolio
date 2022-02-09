@@ -5,6 +5,7 @@ import Cards from '../components/cards'
 import ProjectCard from '../components/ProjectCard'
 import FadeIn from 'react-fade-in';
 import { useState } from 'react'
+import AButton from '../components/AButton'
 
 export default function Home() {
 
@@ -27,17 +28,21 @@ export default function Home() {
             <path className={styles.svgLine} d="M57 24.1641L74.1592 39.4167C74.6067 39.8144 74.6067 40.5137 74.1592 40.9115L57 56.1641" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </div>
-          <FadeIn delay={500} transitionDuration={2000}>
+          <FadeIn delay={500} transitionDuration={1500}>
             <video id={styles.video} autoPlay loop muted>
                 <source src="/land.mov" type='video/mp4' />
             </video>
+
+            <div className={styles.buttonHolder}>
+              <AButton/>
+            </div>
           </FadeIn>
       </div>
 
     <Cards/>
 
     <div className={styles.projectHolder}>
-      <ProjectCard  />
+      <ProjectCard  name={"test"} tags={["react", "test", "test"]} description={"exampleDescription"} imageLink={"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"}/>
       <ProjectCard  />
     </div> 
 
@@ -64,7 +69,6 @@ export default function Home() {
     <button onClick={() => setVis(!vis)}>
       Click for Fades
     </button>
-
     </div>
   )
 }

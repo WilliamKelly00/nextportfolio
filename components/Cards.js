@@ -14,7 +14,6 @@ export default function Cards() {
                 <div className={`${styles.face} ${styles.face2}`}>
                     <div className={styles.content}>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                            <a href="#">Read More</a>
                     </div>
                 </div>
             </div>
@@ -28,7 +27,6 @@ export default function Cards() {
                 <div className={`${styles.face} ${styles.face2}`}>
                     <div className={styles.content}>1
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                            <a href="#">Read More</a>
                     </div>
                 </div>
             </div>
@@ -42,7 +40,6 @@ export default function Cards() {
                 <div className={`${styles.face} ${styles.face2}`}>
                     <div className={styles.content}>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                            <a href="#">Read More</a>
                     </div>
                 </div>
             </div>
