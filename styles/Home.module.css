@@ -178,7 +178,7 @@
 
 /* align the items such that they create a grid */
 .projectHolder{
-  margin: 0 20%;
+  margin: 0 23%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }

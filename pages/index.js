@@ -3,8 +3,13 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Cards from '../components/cards'
 import ProjectCard from '../components/ProjectCard'
+import FadeIn from 'react-fade-in';
+import { useState } from 'react'
 
 export default function Home() {
+
+  const [vis, setVis] = useState(false);
+
   return (
     // <div className={styles.container}>
    <div> 
@@ -22,9 +27,11 @@ export default function Home() {
             <path className={styles.svgLine} d="M57 24.1641L74.1592 39.4167C74.6067 39.8144 74.6067 40.5137 74.1592 40.9115L57 56.1641" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </div>
+          <FadeIn delay={500} transitionDuration={2000}>
             <video id={styles.video} autoPlay loop muted>
                 <source src="/land.mov" type='video/mp4' />
             </video>
+          </FadeIn>
       </div>
 
     <Cards/>
@@ -33,6 +40,30 @@ export default function Home() {
       <ProjectCard  />
       <ProjectCard  />
     </div> 
+
+
+
+    <FadeIn visible={vis}>
+      <h1>
+        Faded
+      </h1>
+      <h1>
+        Faded
+      </h1>
+      <h1>
+        Faded
+      </h1>
+      <h1>
+        Faded
+      </h1>
+      <h1>
+        Faded
+      </h1>
+    </FadeIn>
+
+    <button onClick={() => setVis(!vis)}>
+      Click for Fades
+    </button>
 
     </div>
   )
