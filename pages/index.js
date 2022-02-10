@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Cards from '../components/cards'
-import ProjectCard from '../components/ProjectCard'
 import FadeIn from 'react-fade-in';
 import { useState } from 'react'
 import AButton from '../components/AButton'
+import ProjectWindow from '../components/ProjectWindow'
 
 export default function Home() {
 
@@ -39,13 +39,17 @@ export default function Home() {
           </FadeIn>
       </div>
 
+    {/* <div className={styles.projectHolder}> */}
+    <FadeIn className={styles.projectHolder} transitionDuration={1000}>
+      
+      <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
+      <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
+      <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
+      <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
+    </FadeIn>
+    {/* </div>  */}
+    
     <Cards/>
-
-    <div className={styles.projectHolder}>
-      <ProjectCard  name={"test"} tags={["react", "test", "test"]} description={"exampleDescription"} imageLink={"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"}/>
-      <ProjectCard  />
-    </div> 
-
 
 
     <FadeIn visible={vis}>
