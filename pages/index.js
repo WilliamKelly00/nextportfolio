@@ -39,15 +39,15 @@ export default function Home() {
           </FadeIn>
       </div>
 
-    {/* <div className={styles.projectHolder}> */}
+    <div className={styles.imageProjects}>
     <FadeIn className={styles.projectHolder} transitionDuration={1000}>
-      
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
     </FadeIn>
-    {/* </div>  */}
+    <Image src='/../public/lines.png' width={1000} height={600} />
+    </div> 
     
     <Cards/>
 
