@@ -6,11 +6,16 @@ import FadeIn from 'react-fade-in';
 import { useState } from 'react'
 import AButton from '../components/AButton'
 import ProjectWindow from '../components/ProjectWindow'
+import {AwesomeButton} from 'react-awesome-button';
+import {AiFillGithub} from 'react-icons/ai';
+import {BsGithub} from 'react-icons/bs'
+import {BsLinkedin} from 'react-icons/bs'
+import {FiMail} from 'react-icons/fi'
+import {AiOutlineMail} from 'react-icons/ai'
 
 export default function Home() {
 
   const [vis, setVis] = useState(false);
-
   return (
     // <div className={styles.container}>
    <div> 
@@ -28,7 +33,7 @@ export default function Home() {
             <path className={styles.svgLine} d="M57 24.1641L74.1592 39.4167C74.6067 39.8144 74.6067 40.5137 74.1592 40.9115L57 56.1641" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </div>
-          <FadeIn delay={500} transitionDuration={1500}>
+          <FadeIn delay={500} transitionDuration={1000}>
             <video id={styles.video} autoPlay loop muted>
                 <source src="/land.mov" type='video/mp4' />
             </video>
@@ -40,13 +45,14 @@ export default function Home() {
       </div>
 
     <div className={styles.imageProjects}>
+
     <FadeIn className={styles.projectHolder} transitionDuration={1000}>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
     </FadeIn>
-    <Image src='/../public/lines.png' width={1000} height={600} />
+    <Image src='/../public/lines.png' width={1920} height={960} />
     </div> 
     
     <Cards/>
@@ -70,9 +76,17 @@ export default function Home() {
       </h1>
     </FadeIn>
 
+
     <button onClick={() => setVis(!vis)}>
       Click for Fades
     </button>
+
+    <div>
+      <AwesomeButton type='github'><BsGithub/>Github</AwesomeButton>
+      <AwesomeButton type='linkedin'><BsLinkedin/>Linkedin</AwesomeButton>
+      <AwesomeButton type='secondary'><AiOutlineMail/>Email</AwesomeButton>
+    </div>
+
     </div>
   )
 }

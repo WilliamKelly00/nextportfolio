@@ -162,7 +162,7 @@
   grid-template-rows: auto;
   grid-row-gap: 50px; 
   grid-column-gap: 50px;
-  margin-left: 7%;
+  margin-left: 15%;
   margin-top: 5%;
 }
 
@@ -170,7 +170,7 @@
   width: 90%;
   margin: auto;
 
-  border-width: 0.5px;
+  border-width: 0.3px;
   border-color: #a1a1a1a8;
   border-style: none dashed none dashed;
 }
