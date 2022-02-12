@@ -14,7 +14,6 @@ export default function Home() {
 
   const [vis, setVis] = useState(false);
   return (
-    // <div className={styles.container}>
    <div> 
     <Head>
         <title>William Kelly</title>
@@ -52,31 +51,6 @@ export default function Home() {
     </div> 
     
     <Cards/>
-
-
-    <FadeIn visible={vis}>
-      <h1>
-        Faded
-      </h1>
-      <h1>
-        Faded
-      </h1>
-      <h1>
-        Faded
-      </h1>
-      <h1>
-        Faded
-      </h1>
-      <h1>
-        Faded
-      </h1>
-    </FadeIn>
-
-
-    <button onClick={() => setVis(!vis)}>
-      Click for Fades
-    </button>
-
 
     <div className={styles.contact}>
       <div className={styles.contactSvg}>
