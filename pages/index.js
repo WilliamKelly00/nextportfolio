@@ -6,12 +6,7 @@ import FadeIn from 'react-fade-in';
 import { useState } from 'react'
 import AButton from '../components/AButton'
 import ProjectWindow from '../components/ProjectWindow'
-import {AwesomeButton} from 'react-awesome-button';
-import {AiFillGithub} from 'react-icons/ai';
-import {BsGithub} from 'react-icons/bs'
-import {BsLinkedin} from 'react-icons/bs'
-import {FiMail} from 'react-icons/fi'
-import {AiOutlineMail} from 'react-icons/ai'
+import { AwesomeButtonSocial} from 'react-awesome-button';
 
 export default function Home() {
 
@@ -82,9 +77,7 @@ export default function Home() {
     </button>
 
     <div>
-      <AwesomeButton type='github'><BsGithub/>Github</AwesomeButton>
-      <AwesomeButton type='linkedin'><BsLinkedin/>Linkedin</AwesomeButton>
-      <AwesomeButton type='secondary'><AiOutlineMail/>Email</AwesomeButton>
+      <AwesomeButtonSocial type="github"></AwesomeButtonSocial>
     </div>
 
     </div>
