@@ -26,7 +26,7 @@ export default function ProjectWindow({name, imageLink, tags}) {
                     ))}
               </ul>
               <div className={styles.abutton}>
-                <AwesomeButton type="link" size="small">Learn more</AwesomeButton>
+                <AwesomeButton type="link">Learn more</AwesomeButton>
               </div>
         </div>
         </FadeIn>

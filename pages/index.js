@@ -35,7 +35,7 @@ export default function Home() {
             </video>
 
             <div className={styles.buttonHolder}>
-              <AButton/>
+              <AwesomeButton type="primary">Resume</AwesomeButton>;
             </div>
           </FadeIn>
       </div>

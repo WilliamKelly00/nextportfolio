@@ -162,7 +162,7 @@
   grid-template-rows: auto;
   grid-row-gap: 50px; 
   grid-column-gap: 50px;
-  margin-left: 15%;
+  margin-left: 12%;
   margin-top: 5%;
 }
 
@@ -204,7 +204,7 @@
   position: relative;
   z-index: 10;
   color: rgba(255, 255, 255, 0.897);
-  top: -260px;
+  top: -240px;
   margin-left: 40%;
 }
 
