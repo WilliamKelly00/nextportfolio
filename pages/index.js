@@ -7,6 +7,8 @@ import { useState } from 'react'
 import AButton from '../components/AButton'
 import ProjectWindow from '../components/ProjectWindow'
 import { AwesomeButtonSocial} from 'react-awesome-button';
+import {AwesomeButton} from 'react-awesome-button';
+import SvgMotion from '../components/SvgMotion';
 
 export default function Home() {
 
@@ -40,7 +42,6 @@ export default function Home() {
       </div>
 
     <div className={styles.imageProjects}>
-
     <FadeIn className={styles.projectHolder} transitionDuration={1000}>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
@@ -76,8 +77,20 @@ export default function Home() {
       Click for Fades
     </button>
 
-    <div>
-      <AwesomeButtonSocial type="github"></AwesomeButtonSocial>
+
+    <div className={styles.contact}>
+      <div className={styles.contactSvg}>
+        <SvgMotion/>   
+        <div className={styles.contactWriting}>
+          <h1>Let's Talk</h1>
+        </div>
+        <div className={styles.contactButtons}>
+          <AwesomeButtonSocial type="github" href="https://github.com/WilliamKelly00" target="_blank"></AwesomeButtonSocial>
+          <AwesomeButtonSocial type="linkedin" url="https://www.linkedin.com/in/william-kelly-65b1b5210/"></AwesomeButtonSocial>
+          <AwesomeButton type="primary">📨</AwesomeButton>
+        </div>
+      </div>
+    <Image src='/../public/lines.png' width={1920} height={960} />
     </div>
 
     </div>

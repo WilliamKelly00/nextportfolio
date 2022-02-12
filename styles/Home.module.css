@@ -180,3 +180,36 @@
   top: 65%;
   left: 40%;
 }
+
+.contact{
+  width: 90%;
+  margin: auto;
+
+  border-width: 0.3px;
+  border-color: #a1a1a1a8;
+  border-style: none dashed none dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactSvg{
+  position: absolute;
+  z-index: 10;
+  box-shadow: 40px -30px #0d35ffc5;
+  opacity: 0.98;
+}
+
+.contactWriting{
+  position: relative;
+  z-index: 10;
+  color: rgba(255, 255, 255, 0.897);
+  top: -260px;
+  margin-left: 40%;
+}
+
+.contactButtons{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
