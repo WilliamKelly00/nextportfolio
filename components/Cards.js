@@ -13,7 +13,7 @@ export default function Cards() {
                 </div>
                 <div className={`${styles.face} ${styles.face2}`}>
                     <div className={styles.content}>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <p>Skilled in designing optimal solutions to complex problems, software architecture design, and innovating end-to-end user experiences.</p>
                     </div>
                 </div>
             </div>
@@ -25,8 +25,8 @@ export default function Cards() {
                     </div>
                 </div>
                 <div className={`${styles.face} ${styles.face2}`}>
-                    <div className={styles.content}>1
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                    <div className={styles.content}>
+                        <p>Experienced in implementing solutions in various languages, frameworks, and environments. Skilled in both static and dynamic code analysis.</p>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ export default function Cards() {
                 </div>
                 <div className={`${styles.face} ${styles.face2}`}>
                     <div className={styles.content}>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                        <p>Proficient in deploying and maintaining applications, containerizing applications, and orchestrating infrastructure.</p>
                     </div>
                 </div>
             </div>
