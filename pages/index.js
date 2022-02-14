@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import Cards from '../components/cards'
 import FadeIn from 'react-fade-in';
 import { useState } from 'react'
-import AButton from '../components/AButton'
 import ProjectWindow from '../components/ProjectWindow'
 import { AwesomeButtonSocial} from 'react-awesome-button';
 import {AwesomeButton} from 'react-awesome-button';
@@ -12,7 +11,6 @@ import SvgMotion from '../components/SvgMotion';
 
 export default function Home() {
 
-  const [vis, setVis] = useState(false);
   return (
    <div> 
     <Head>
@@ -35,7 +33,7 @@ export default function Home() {
             </video>
 
             <div className={styles.buttonHolder}>
-              <AwesomeButton type="primary">Resume</AwesomeButton>;
+              <AwesomeButton type="primary">Resume</AwesomeButton>
             </div>
           </FadeIn>
       </div>
@@ -47,7 +45,7 @@ export default function Home() {
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
       <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
     </FadeIn>
-    <Image src='/../public/lines.png' width={1920} height={960} />
+    <Image src='/../public/lines.png' width={1920} height={1080} />
     </div> 
     
     <Cards/>
@@ -61,7 +59,7 @@ export default function Home() {
         <div className={styles.contactButtons}>
           <AwesomeButtonSocial type="github" href="https://github.com/WilliamKelly00" target="_blank"></AwesomeButtonSocial>
           <AwesomeButtonSocial type="linkedin" url="https://www.linkedin.com/in/william-kelly-65b1b5210/"></AwesomeButtonSocial>
-          <AwesomeButton type="primary">📨</AwesomeButton>
+          <AwesomeButton type="primary" href="mailto:williammkelly00@gmail.com">📨</AwesomeButton>
         </div>
       </div>
     <Image src='/../public/lines.png' width={1920} height={960} />
