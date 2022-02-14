@@ -8,6 +8,7 @@ import ProjectWindow from '../components/ProjectWindow'
 import { AwesomeButtonSocial} from 'react-awesome-button';
 import {AwesomeButton} from 'react-awesome-button';
 import SvgMotion from '../components/SvgMotion';
+import Footer from '../components/Footer';
 
 export default function Home() {
 
@@ -33,7 +34,7 @@ export default function Home() {
             </video>
 
             <div className={styles.buttonHolder}>
-              <AwesomeButton type="primary">Resume</AwesomeButton>
+               <AwesomeButton type="primary" href="/files/Kelly_William.pdf" target="_blank">Resume</AwesomeButton>
             </div>
           </FadeIn>
       </div>
@@ -64,6 +65,8 @@ export default function Home() {
       </div>
     <Image src='/../public/lines.png' width={1920} height={960} />
     </div>
+
+    <Footer/>
 
     </div>
   )
