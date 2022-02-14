@@ -51,7 +51,7 @@ export default function SvgMotion() {
             variants={bar1}
             transition={{
                 duration: 5,
-                yoyo: Infinity,
+                repeatType: "mirror",
                 repeat: Infinity
             }}
             fill="#9900ff"
@@ -61,7 +61,7 @@ export default function SvgMotion() {
             variants={bar2}
             transition={{
                 duration: 5,
-                yoyo: Infinity,
+                repeatType: "mirror",
                 repeat: Infinity
             }}
             fill="#7700c6"
@@ -71,7 +71,7 @@ export default function SvgMotion() {
             variants={bar3}
             transition={{
                 duration: 5,
-                yoyo: Infinity,
+                repeatType: "mirror",
                 repeat: Infinity
             }}
             fill="#560090"
