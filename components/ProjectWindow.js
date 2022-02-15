@@ -2,8 +2,14 @@ import { useState } from 'react'
 import styles from '../styles/ProjectWindow.module.css'
 import FadeIn from 'react-fade-in';
 import { AwesomeButton } from "react-awesome-button";
+import Image from 'next/image'
 
-export default function ProjectWindow({name, imageLink, tags}) {
+// const myLoader = ({ src }) => {
+//   return `/${src}?w=${450}&h=${250}`;
+// }
+// var photoID = 10813131
+
+export default function ProjectWindow({name, tags, imageLink, githubLink}) {
     const [isShown, setIsShown] = useState(false);
 
   return (
@@ -17,7 +23,14 @@ export default function ProjectWindow({name, imageLink, tags}) {
 	  <div className={styles.fakeScreen}
             onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
-      >
+        >
+      <div className={styles.image}>
+      <Image
+        layout="fill"
+        src={imageLink}
+        alt={name}
+        />
+      </div>
       <FadeIn visible={isShown}>
         <div className={styles.desc} >
             <ul className={styles.list}>
@@ -26,7 +39,7 @@ export default function ProjectWindow({name, imageLink, tags}) {
                     ))}
               </ul>
               <div className={styles.abutton}>
-                <AwesomeButton type="link">Learn more</AwesomeButton>
+                <AwesomeButton type="link" href={githubLink}>Learn more</AwesomeButton>
               </div>
         </div>
         </FadeIn>

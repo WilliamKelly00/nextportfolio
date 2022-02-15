@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Cards from '../components/cards'
 import FadeIn from 'react-fade-in';
-import { useState } from 'react'
 import ProjectWindow from '../components/ProjectWindow'
 import { AwesomeButtonSocial} from 'react-awesome-button';
 import {AwesomeButton} from 'react-awesome-button';
@@ -41,10 +40,10 @@ export default function Home() {
 
     <div className={styles.imageProjects}>
     <FadeIn className={styles.projectHolder} transitionDuration={1000}>
-      <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
-      <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
-      <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
-      <ProjectWindow name={"project 1"} tags={["react", "test", "test"]}/>
+      <ProjectWindow name={"Next Blog"} tags={["react", "test", "test"]} imageLink={'/blogFrontpage.png'} githubLink={'https://github.com/WilliamKelly00/nextblog'}/>
+      <ProjectWindow name={"Price Tracker"} tags={["react", "test", "test"]} imageLink={'/priceFollow.png'} githubLink={'https://github.com/WilliamKelly00/AmazonTracker'}/>
+      <ProjectWindow name={"Discord Finder"} tags={["react", "test", "test"]} imageLink={'/discordFinder.png'} githubLink={'https://github.com/WilliamKelly00/discordfinder'}/>
+      <ProjectWindow name={"B+ Tree"} tags={["react", "test", "test"]} imageLink={'/inmembTree.png'} githubLink={'https://github.com/WilliamKelly00'}/>
     </FadeIn>
     <Image src='/../public/lines.png' width={1920} height={1080} />
     </div> 

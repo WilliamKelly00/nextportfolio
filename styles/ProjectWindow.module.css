@@ -47,7 +47,7 @@
   .fakeScreen {
     position: relative;
     /* background-color: #151515; */
-    background-color: #343434;
+    /* background-color: #343434; */
     box-sizing: border-box;
     width: 450px;
     min-height: 250px;
@@ -55,6 +55,11 @@
     padding: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+
+  .desc{
+    position: relative;
+    z-index: 5;
   }
 
   .list{
@@ -75,8 +80,9 @@
     font-size: 28px;
     line-height: 30px;
   }
-
+/* 
   .fakeScreen:hover{
+    position: absolute;
     background-color: #000;
     -webkit-transition-property: all;
     -moz-transition-property: all;
@@ -90,11 +96,11 @@
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
     transition-timing-function: ease;
-  }
+  } */
+  
   
   .abutton{
     margin-top: 50px;
     margin-left: 32%;
-
   }
   
