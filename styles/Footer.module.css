@@ -4,6 +4,13 @@
     align-items: center;
     padding: 70px;
     color: rgba(0, 0, 0, 0.815);
+    width: 90%;
+
+    margin: auto;
+
+    border-width: 0.3px;
+    border-color: #a1a1a1a8;
+    border-style: none dashed none dashed;
 }
 
 .gradient{

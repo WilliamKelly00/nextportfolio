@@ -160,8 +160,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 50px; 
-  grid-column-gap: 50px;
+  grid-row-gap: 75px; 
+  grid-column-gap: 125px;
   margin-left: 12%;
   margin-top: 5%;
 }

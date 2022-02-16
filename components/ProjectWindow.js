@@ -43,20 +43,6 @@ export default function ProjectWindow({name, tags, imageLink, githubLink}) {
             </FadeIn>
           </div>
         </div>
-
-      {/* <FadeIn delay={10} transitionDuration={300} visible={isShown}>
-        <div className={styles.descbg}></div>
-        <div className={styles.desc} >
-            <ul className={styles.list}>
-                    {tags && tags.map(tag => (
-                      <li className={styles.chip}>{tag}</li>
-                    ))}
-              </ul>
-              <div className={styles.abutton}>
-                <AwesomeButton type="link" href={githubLink}>Learn more</AwesomeButton>
-              </div>
-        </div>
-        </FadeIn> */}
     </div>
   )
 }

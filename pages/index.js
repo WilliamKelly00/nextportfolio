@@ -8,6 +8,7 @@ import { AwesomeButtonSocial} from 'react-awesome-button';
 import {AwesomeButton} from 'react-awesome-button';
 import SvgMotion from '../components/SvgMotion';
 import Footer from '../components/Footer';
+import TwoWaves from '../components/TwoWaves';
 
 export default function Home() {
 
@@ -37,6 +38,8 @@ export default function Home() {
             </div>
           </FadeIn>
       </div>
+
+    <TwoWaves/>
 
     <div className={styles.imageProjects}>
     <FadeIn className={styles.projectHolder} transitionDuration={1000}>

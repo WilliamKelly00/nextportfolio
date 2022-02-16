@@ -1,0 +1,12 @@
+.svg {
+    background-color: #242424;
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+  }
+  .moving {
+    position: relative;
+    border-radius: 5%;
+    margin-left: 20%;
+    margin-top: 2%;
+  }
