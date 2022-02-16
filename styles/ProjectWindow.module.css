@@ -104,3 +104,12 @@
     margin-left: 32%;
   }
   
+  .descbg{
+    position: absolute;
+    z-index: 3;
+    width: 450px;
+    height: 250px;
+    margin-left: -20px;
+    margin-top: -36px;
+    background-color: rgba(0, 0, 0, 0.575);
+  }

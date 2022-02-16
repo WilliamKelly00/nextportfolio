@@ -24,14 +24,13 @@ export default function ProjectWindow({name, tags, imageLink, githubLink}) {
             onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
         >
-      <div className={styles.image}>
       <Image
         layout="fill"
         src={imageLink}
         alt={name}
         />
-      </div>
       <FadeIn visible={isShown}>
+        <div className={styles.descbg}></div>
         <div className={styles.desc} >
             <ul className={styles.list}>
                     {tags && tags.map(tag => (
