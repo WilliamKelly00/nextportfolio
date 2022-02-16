@@ -38,7 +38,8 @@
     width: 450px;
     box-sizing: border-box;
     height: 25px;
-    background-color: #bbb;
+    /* background-color: #bbb; */
+    background-color: rgb(66, 66, 66);
     margin: 0 auto;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -46,8 +47,6 @@
   
   .fakeScreen {
     position: relative;
-    /* background-color: #151515; */
-    /* background-color: #343434; */
     box-sizing: border-box;
     width: 450px;
     min-height: 250px;
@@ -57,22 +56,17 @@
     border-bottom-right-radius: 5px;
   }
 
-  .desc{
-    position: relative;
-    z-index: 5;
-  }
 
   .list{
     list-style: none;
   }
   
 
-
   /* Create a chip with a color of 333 and a darker bottom border shadow */
   .chip{
     color: #fff;
     background-color: rgba(51, 51, 51, 0.952);
-    border-bottom: 8px solid rgba(34, 34, 34, 0.829);
+    border-bottom: 8px solid rgba(34, 34, 34, 0.89);
     display: inline-block;
     padding: 0 20px;
     margin: 2px;
@@ -80,10 +74,26 @@
     font-size: 28px;
     line-height: 30px;
   }
-/* 
-  .fakeScreen:hover{
+  
+  .abutton{
+    margin-top: 50px;
+    margin-left: 32%;
+  }
+
+  .blackbg{
     position: absolute;
-    background-color: #000;
+    z-index: 3;
+    width: 450px;
+    height: 250px;
+    margin-left: -20px;
+    margin-top: -20px;
+    background-color: #0000006e;
+    z-index: 2;
+  }
+
+  .blackbg:hover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.849);
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -96,20 +106,4 @@
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
     transition-timing-function: ease;
-  } */
-  
-  
-  .abutton{
-    margin-top: 50px;
-    margin-left: 32%;
-  }
-  
-  .descbg{
-    position: absolute;
-    z-index: 3;
-    width: 450px;
-    height: 250px;
-    margin-left: -20px;
-    margin-top: -36px;
-    background-color: rgba(0, 0, 0, 0.575);
   }
