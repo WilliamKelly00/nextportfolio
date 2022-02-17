@@ -29,7 +29,7 @@ export default function ProjectWindow({name, tags, imageLink, githubLink}) {
             <FadeIn visible={isShown}>
               <ul className={styles.list}>
                       {tags && tags.map(tag => (
-                        <li className={styles.chip}>{tag}</li>
+                        <li key={tag} className={styles.chip}>{tag}</li>
                         ))}
                 </ul>
                 <div className={styles.abutton}>

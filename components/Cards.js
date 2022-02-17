@@ -1,4 +1,5 @@
 import styles from '../styles/Card.module.css'
+import Image from 'next/image';
 
 export default function Cards() {
   return(
@@ -8,7 +9,7 @@ export default function Cards() {
             <div className={styles.card}>
                 <div className={`${styles.face} ${styles.face1}`}>
                     <div className={styles.content}>
-                        <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true" />
+                        <Image src={"https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true"} width={100} height={100} alt={""}/>
                         <h3>Design</h3>
                     </div>
                 </div>
@@ -21,7 +22,7 @@ export default function Cards() {
             <div className={styles.card}>
                 <div className={`${styles.face} ${styles.face1}`}>
                     <div className={styles.content}>
-                        <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true" />
+                        <Image src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true" width={100} height={100} alt={""}/>
                         <h3>Code</h3>
                     </div>
                 </div>
@@ -34,7 +35,7 @@ export default function Cards() {
             <div className={styles.card}>
                 <div className={`${styles.face} ${styles.face1}`}>
                     <div className={styles.content}>
-                        <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true" />
+                        <Image src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true" width={100} height={100} alt={""} />
                         <h3>Launch</h3>
                     </div>
                 </div>
