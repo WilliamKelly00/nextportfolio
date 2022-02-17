@@ -53,14 +53,9 @@ export default function Home() {
     <Image src='/../public/lines.png' width={1920} height={1080} />
     </div> 
 
-    <Fade delay={100}>
     <TwoWaves/>
-    </Fade>
-      
-    <Fade delay={100}>
-    <Cards/>
-    </Fade>
-      
+
+    <Cards/>      
 
     
     <div className={styles.contact}>

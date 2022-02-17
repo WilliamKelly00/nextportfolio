@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import styles from '../styles/Waves.module.css'
+import { Fade } from "react-awesome-reveal";
 
 
 export default function TwoWaves() {
@@ -14,21 +15,23 @@ export default function TwoWaves() {
         }
         };
 
-        const waveTop = {
-            start: {
-                d:
-                "M0 146L50 157.7C100 169.3 200 192.7 300 191.5C400 190.3 500 164.7 600 144C700 123.3 800 107.7 850 99.8L900 92L900 0L850 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z"
-            },
-            end: {
-                d:
-                "M0 179L50 164.2C100 149.3 200 119.7 300 131.8C400 144 500 198 600 224.7C700 251.3 800 250.7 850 250.3L900 250L900 0L850 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z"
-            }
-            };
+        // const waveTop = {
+        //     start: {
+        //         d:
+        //         "M0 146L50 157.7C100 169.3 200 192.7 300 191.5C400 190.3 500 164.7 600 144C700 123.3 800 107.7 850 99.8L900 92L900 0L850 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z"
+        //     },
+        //     end: {
+        //         d:
+        //         "M0 179L50 164.2C100 149.3 200 119.7 300 131.8C400 144 500 198 600 224.7C700 251.3 800 250.7 850 250.3L900 250L900 0L850 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0L0 0Z"
+        //     }
+        //     };
   return (
     <div className={styles.svg}>
+        <Fade triggerOnce delay={1000} duration={1000}>
         <div className={styles.writing}>
         <h1>Giving life to ideas</h1>
         </div>
+        </Fade>
         <motion.svg className={styles.moving}
             initial="start"
             width="1728"
@@ -37,19 +40,9 @@ export default function TwoWaves() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             whileHover="end"
-        >
+            >
             <motion.path
             variants={waveBot}
-            transition={{
-                duration: 5,
-                repeatType: "mirror",
-                repeat: Infinity
-            }}
-            fill="#FBAE3C"
-            />
-
-        <motion.path
-            variants={waveTop}
             transition={{
                 duration: 4,
                 repeatType: "mirror",
@@ -57,6 +50,16 @@ export default function TwoWaves() {
             }}
             fill="#FBAE3C"
             />
+
+        {/* <motion.path
+            variants={waveTop}
+            transition={{
+                duration: 4,
+                repeatType: "mirror",
+                repeat: Infinity
+            }}
+            fill="#FBAE3C"
+        /> */}
         </motion.svg>
     </div>
   )

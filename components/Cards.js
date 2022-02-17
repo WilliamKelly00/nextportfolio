@@ -4,6 +4,7 @@ export default function Cards() {
   return(
     <div className={styles.bodyC}>
         <div className={styles.container}>
+
             <div className={styles.card}>
                 <div className={`${styles.face} ${styles.face1}`}>
                     <div className={styles.content}>

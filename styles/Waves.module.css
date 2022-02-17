@@ -1,11 +1,12 @@
 .svg {
     background-color: #242424;
-    height: 125vh;
+    height: 100vh;
     width: 90%;
     margin: auto;
   }
   .moving {
     position: relative;
+    margin-top: -200px;
     margin-left: -182px;
   }
 
@@ -13,7 +14,7 @@
     position: absolute;
     z-index: 5;
     font-size: 28px;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 4%;
     background: -webkit-linear-gradient(#560090, #496aff);
     -webkit-background-clip: text;
