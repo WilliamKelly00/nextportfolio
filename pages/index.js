@@ -50,7 +50,7 @@ export default function Home() {
         <ProjectWindow name={"B+ Tree"} tags={["Java", "JUnit", "Data Structures", "Algorithms"]} imageLink={'/inmembTree.png'} githubLink={'https://github.com/WilliamKelly00'}/>
     </Fade>
       </div>
-    <Image src='/../public/lines.png' alt="" width={1920} height={1080} />
+    <Image src='/lines.png' alt="" width={1920} height={1080} />
     </div> 
 
     <TwoWaves/>
@@ -74,7 +74,7 @@ export default function Home() {
       </Fade>
       </div>
 
-    <Image src='/../public/lines.png' alt="" width={1920} height={960} />
+    <Image src='/lines.png' alt="" width={1920} height={960} />
     </div>
 
     <Footer/>
