@@ -34,8 +34,8 @@ export default function TwoWaves() {
         </Fade>
         <motion.svg className={styles.moving}
             initial="start"
-            width="1728"
-            height="915"
+            width="2048"
+            height="1080"
             viewBox="0 0 900 600"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
