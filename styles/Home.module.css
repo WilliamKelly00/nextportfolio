@@ -193,6 +193,17 @@
   align-items: center;
 }
 
+.waves{
+}
+
+.wavesWriting{
+  position: absolute;
+  z-index: 10;
+  color: rgba(255, 255, 255, 0.897);
+  top: 1000px;
+  left: 400px;
+}
+
 .contactSvg{
   position: absolute;
   z-index: 10;

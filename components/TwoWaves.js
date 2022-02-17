@@ -26,10 +26,13 @@ export default function TwoWaves() {
             };
   return (
     <div className={styles.svg}>
+        <div className={styles.writing}>
+        <h1>Giving life to ideas</h1>
+        </div>
         <motion.svg className={styles.moving}
             initial="start"
-            width="900"
-            height="600"
+            width="1728"
+            height="915"
             viewBox="0 0 900 600"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

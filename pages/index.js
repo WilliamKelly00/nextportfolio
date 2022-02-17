@@ -9,6 +9,7 @@ import {AwesomeButton} from 'react-awesome-button';
 import SvgMotion from '../components/SvgMotion';
 import Footer from '../components/Footer';
 import TwoWaves from '../components/TwoWaves';
+import { Fade } from 'react-awesome-reveal';
 
 export default function Home() {
 
@@ -39,22 +40,33 @@ export default function Home() {
           </FadeIn>
       </div>
 
-    <TwoWaves/>
 
     <div className={styles.imageProjects}>
-    <FadeIn className={styles.projectHolder} transitionDuration={1000}>
-      <ProjectWindow name={"Next Blog"} tags={["react", "test", "test"]} imageLink={'/blogFrontpage.png'} githubLink={'https://github.com/WilliamKelly00/nextblog'}/>
-      <ProjectWindow name={"Price Tracker"} tags={["react", "test", "test"]} imageLink={'/priceFollow.png'} githubLink={'https://github.com/WilliamKelly00/AmazonTracker'}/>
-      <ProjectWindow name={"Discord Finder"} tags={["react", "test", "test"]} imageLink={'/discordFinder.png'} githubLink={'https://github.com/WilliamKelly00/discordfinder'}/>
-      <ProjectWindow name={"B+ Tree"} tags={["react", "test", "test"]} imageLink={'/inmembTree.png'} githubLink={'https://github.com/WilliamKelly00'}/>
-    </FadeIn>
+      <div className={styles.projectHolder}>
+    <Fade delay={100}>
+        <ProjectWindow name={"Next Blog"} tags={["React", "Next", "Firebase", "JavaScript", "CSS"]} imageLink={'/blogFrontpage.png'} githubLink={'https://github.com/WilliamKelly00/nextblog'}/>
+        <ProjectWindow name={"Price Tracker"} tags={["React", "Firebase", "Api", "JavaScript", "Agile", "CSS"]} imageLink={'/priceFollow.png'} githubLink={'https://github.com/WilliamKelly00/AmazonTracker'}/>
+        <ProjectWindow name={"Discord Finder"} tags={["React", "Redis", "Full-text Search", "JavaScript", "CSS"]} imageLink={'/discordFinder.png'} githubLink={'https://github.com/WilliamKelly00/discordfinder'}/>
+        <ProjectWindow name={"B+ Tree"} tags={["Java", "JUnit", "Data Structures", "Algorithms"]} imageLink={'/inmembTree.png'} githubLink={'https://github.com/WilliamKelly00'}/>
+    </Fade>
+      </div>
     <Image src='/../public/lines.png' width={1920} height={1080} />
     </div> 
-    
-    <Cards/>
 
+    <Fade delay={100}>
+    <TwoWaves/>
+    </Fade>
+      
+    <Fade delay={100}>
+    <Cards/>
+    </Fade>
+      
+
+    
     <div className={styles.contact}>
+
       <div className={styles.contactSvg}>
+      <Fade delay={100}>
         <SvgMotion/>   
         <div className={styles.contactWriting}>
           <h1>Let's Talk</h1>
@@ -64,7 +76,9 @@ export default function Home() {
           <AwesomeButtonSocial type="linkedin" url="https://www.linkedin.com/in/william-kelly-65b1b5210/"></AwesomeButtonSocial>
           <AwesomeButton type="primary" href="mailto:williammkelly00@gmail.com">📨</AwesomeButton>
         </div>
+      </Fade>
       </div>
+
     <Image src='/../public/lines.png' width={1920} height={960} />
     </div>
 
