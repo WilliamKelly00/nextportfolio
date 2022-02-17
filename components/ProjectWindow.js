@@ -4,11 +4,6 @@ import FadeIn from 'react-fade-in';
 import { AwesomeButton } from "react-awesome-button";
 import Image from 'next/image'
 
-// const myLoader = ({ src }) => {
-//   return `/${src}?w=${450}&h=${250}`;
-// }
-// var photoID = 10813131
-
 export default function ProjectWindow({name, tags, imageLink, githubLink}) {
     const [isShown, setIsShown] = useState(false);
 
