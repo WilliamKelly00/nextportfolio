@@ -29,7 +29,7 @@ export default function TwoWaves() {
     <div className={styles.svg}>
         <Fade triggerOnce delay={1000} duration={1000}>
         <div className={styles.writing}>
-        <h1>Giving life to ideas</h1>
+        <h1>Interested in solving complex problems, developing scalable systems, and improving user experiences.</h1>
         </div>
         </Fade>
         <motion.svg className={styles.moving}
