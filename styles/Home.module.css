@@ -2,10 +2,20 @@
   padding: 0 2rem;
 }
 
+.writing{
+  display: none;
+}
 .body{
   width: 90%;
   margin: auto;
   overflow: hidden;
+}
+
+.landingMobile{
+  display: none;
+}
+.mobileButtonHolder{
+  display: none;
 }
 
 #video{
@@ -106,4 +116,53 @@
   display: flex;
   justify-content: center;
   flex-grow: 1;
+}
+
+/* Mobile styling */
+
+@media only screen and (max-width: 600px) {
+  .projectHolder{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  #video{
+    display: none;
+  }
+  .body{
+    min-width: 100vw;
+  }
+  .landingMobile{
+    display: block;
+    margin-top: 15%;
+    margin-left: 3%;
+  }
+
+  .writing h1{
+    margin: 0;
+    padding: 0;
+  }
+  .writing h3{
+    margin: 0;
+    padding: 0;
+  }
+
+  .writing{
+    display: block;
+    position: relative;
+    font-size: 28px;
+    background: -webkit-linear-gradient(#560090, #496aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .mobileButtonHolder{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+  }
+
+  
 }

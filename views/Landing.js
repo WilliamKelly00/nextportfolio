@@ -24,6 +24,15 @@ export default function Landing() {
             </div>
           </FadeIn>
       </div>
+      <div className={styles.landingMobile}>
+        <div className={styles.writing}>
+        <h1>William Kelly</h1>
+        <h3>Software Engineer</h3>
+        </div>
+        <div className={styles.mobileButtonHolder}>
+          <AwesomeButton type="primary" href="/files/Kelly_William.pdf" target="_blank">Resume</AwesomeButton>
+        </div>
+      </div>
     </div>
   )
 }
