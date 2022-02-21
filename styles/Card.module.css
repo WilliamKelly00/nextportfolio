@@ -107,5 +107,6 @@
         display: grid;
         grid-row: 1fr 1fr 1fr;
         margin-left: auto;
+        padding-bottom: 50%;
     }
 }
