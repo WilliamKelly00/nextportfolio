@@ -34,8 +34,11 @@
   @media only screen and (max-width: 600px) {
 
     .svg{
-      height: 50vh;
+      height: 100%;
       margin-bottom: 2%;
+    }
+    .moving{
+      display: none;
     }
 
     .writing{
