@@ -1,7 +1,3 @@
-.container {
-  padding: 0 2rem;
-}
-
 .writing{
   display: none;
 }
@@ -77,6 +73,14 @@
   left: 40%;
 }
 
+.wavesWriting{
+  position: absolute;
+  z-index: 10;
+  color: rgba(255, 255, 255, 0.897);
+  top: 1000px;
+  left: 400px;
+}
+
 .contact{
   width: 90%;
   margin: auto;
@@ -89,13 +93,6 @@
   align-items: center;
 }
 
-.wavesWriting{
-  position: absolute;
-  z-index: 10;
-  color: rgba(255, 255, 255, 0.897);
-  top: 1000px;
-  left: 400px;
-}
 
 .contactSvg{
   position: absolute;
@@ -121,13 +118,21 @@
 /* Mobile styling */
 
 @media only screen and (max-width: 600px) {
-  .projectHolder{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+
+  .container{
+    width: 90%;
+    margin: auto;
   }
+
+  /* Landing */
   #video{
     display: none;
   }
+  
+  .buttonHolder{
+    display: none;
+  }
+  
   .body{
     min-width: 100vw;
   }
@@ -136,7 +141,7 @@
     margin-top: 15%;
     margin-left: 3%;
   }
-
+  
   .writing h1{
     margin: 0;
     padding: 0;
@@ -145,7 +150,7 @@
     margin: 0;
     padding: 0;
   }
-
+  
   .writing{
     display: block;
     position: relative;
@@ -154,7 +159,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
+  
   .mobileButtonHolder{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -163,6 +168,29 @@
     align-items: center;
     flex-grow: 3;
   }
+  
+  /* Projects */
+  .projectHolder{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .imageProjects{
+    width: 100%;
+    height: 150vh;
+    margin: auto;
+    border: none;
+  }
+
+  .lines{
+    display: none;
+  }
+
+  /* Contact */
+  .contact{
+    display: none;
+  }
+
 
   
 }

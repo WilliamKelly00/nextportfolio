@@ -19,3 +19,29 @@
     margin: auto;
     height: 25px;
 }
+
+@media only screen and (max-width: 600px) {
+    /* .copyright{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 3%;
+        margin: auto;
+        margin-left: 20%;
+        font-size: 0.7rem;
+        border: none;
+    } */
+
+    .copyright{
+        font-size: 0.6rem;
+        border: none;
+        padding: 0;
+    }
+    .gradient{
+        padding: auto;
+        margin: auto;
+        width: 90%;
+        height: 28vh;
+    }
+
+}

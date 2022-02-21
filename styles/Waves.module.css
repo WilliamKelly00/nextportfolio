@@ -22,3 +22,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  @media only screen and (max-width: 600px) {
+
+    .svg{
+      height: 50vh;
+      margin-bottom: 2%;
+    }
+
+    .writing{
+      display: block;
+      position: relative;
+      font-size: 1.2rem;
+      background: -webkit-linear-gradient(#560090, #496aff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }

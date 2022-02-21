@@ -100,3 +100,12 @@
     background: #333;
     color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+    .container{
+        height: 140vh;
+        display: grid;
+        grid-row: 1fr 1fr 1fr;
+        margin-left: auto;
+    }
+}
