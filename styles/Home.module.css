@@ -145,10 +145,16 @@
   .writing h1{
     margin: 0;
     padding: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .writing h3{
     margin: 0;
     padding: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .writing{
@@ -156,6 +162,7 @@
     position: relative;
     font-size: 28px;
     background: -webkit-linear-gradient(#560090, #496aff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
