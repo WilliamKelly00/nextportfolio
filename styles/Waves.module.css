@@ -15,10 +15,12 @@
   .writing{
     position: absolute;
     z-index: 5;
-    font-size: 28px;
+    width: 80%;
+    font-size: 1.7rem;
     margin-top: 10%;
     margin-left: 4%;
     background: -webkit-linear-gradient(#560090, #496aff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -35,6 +37,7 @@
       position: relative;
       font-size: 1.2rem;
       background: -webkit-linear-gradient(#560090, #496aff);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
