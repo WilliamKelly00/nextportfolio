@@ -138,6 +138,28 @@
       transform: skewy(-4deg) skewX(-1deg) scale(1.08);
     }
 
+  .projectHolder i{
+    /* remove italics */
+    font-style: normal;
+    font-weight: 800;
+    background-image: linear-gradient(to right bottom, #560090, #591ea4, #5932b9, #5843ce, #5454e3, #3b6bf0, #1e80f9, #0093ff, #00a9ff, #00baf2, #00c8dd, #00d3c5);
+    background-size: 400%;
+    background-clip: text;
+    color: transparent;
+    animation: text-bg-animation 5s ease-in-out infinite alternate;
+    
+  }
+
+  @keyframes text-bg-animation {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+  }
+
+
 .imageProjects{
   width: 90%;
   margin: auto;
