@@ -75,7 +75,7 @@
 .projectHolder h1{
   font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 20%;
+  margin-top: 25%;
   margin-bottom: 0;
 }
 
@@ -94,6 +94,13 @@
       #1100fc15 -15px 15px,
          #1100fc10 -20px 20px,
          #1100fc05 -25px 25px;
+
+
+      -webkit-transition: all 0.8s ease-in-out;
+      -moz-transition: all 0.8s ease-in-out;
+      -o-transition: all 0.8s ease-in-out;
+      transition: all 0.8s ease-in-out;
+     
       
   }
   
@@ -111,7 +118,24 @@
       #FBAE3C20 15px 15px,
         #FBAE3C10 20px 20px,
         #FBAE3C05 25px 25px;
-      
+
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -o-transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out; 
+    }
+
+    .slanted:hover{
+      -webkit-transform: skewy(4deg) skewX(1deg) scale(1.08);
+      -moz-transform: skewy(4deg) skewX(1deg) scale(1.08);
+      -o-transform: skewy(4deg) skewX(1deg) scale(1.08);
+      transform: skewy(4deg) skewX(1deg) scale(1.08);
+    }
+    .slantedNegative:hover{
+      -webkit-transform: skewy(-4deg) skewX(-1deg) scale(1.08);
+      -moz-transform: skewy(-4deg) skewX(-1deg) scale(1.08);
+      -o-transform: skewy(4deg) skewX(-1deg) scale(1.08);
+      transform: skewy(-4deg) skewX(-1deg) scale(1.08);
     }
 
 .imageProjects{
