@@ -19,12 +19,20 @@ export default function Home() {
       </Head>
 
     <div className={styles.container}>
+    <div style={{
+      backgroundImage: "url(" + "/lines3.png" + ")",
+      width: "100%",
+      height:"100%",
+      backgroundRepeat: "repeat-y",
+      backgroundPosition: "center"
+    }}>
       <Landing/>
       <Projects/>
       <TwoWaves/>
       <Cards/>      
       <Contact/>
       <Footer/>
+    </div>
     </div>
 
     </div>

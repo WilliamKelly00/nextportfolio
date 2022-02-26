@@ -27,7 +27,7 @@ export default function TwoWaves() {
         //     };
   return (
     <div className={styles.svg}>
-        <Fade triggerOnce delay={1000} duration={1000}>
+        <Fade triggerOnce delay={700} duration={1000}>
         <div className={styles.writing}>
         <h1>Interested in solving complex problems, developing scalable systems, and improving user experiences.</h1>
         </div>

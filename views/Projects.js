@@ -7,17 +7,32 @@ import Image from 'next/image';
 export default function Projects() {
   return (
     <div>
-    <div className={styles.imageProjects}>
+      {/* <div className={styles.projBG}>
+      <Image src='/lines.png' alt="" width={1920} height={1080} />
+      </div> */}
+
       <div className={styles.projectHolder}>
-    <Fade delay={100}>
-        <ProjectWindow name={"Next Blog"} tags={["React", "Next", "Firebase", "JavaScript", "CSS"]} imageLink={'/blogFrontpage.png'} githubLink={'https://github.com/WilliamKelly00/nextblog'}/>
-        <ProjectWindow name={"Price Tracker"} tags={["React", "Firebase", "Api", "JavaScript", "Agile", "CSS"]} imageLink={'/priceFollow.png'} githubLink={'https://github.com/WilliamKelly00/AmazonTracker'}/>
-        <ProjectWindow name={"Discord Finder"} tags={["React", "Redis", "Full-text Search", "JavaScript", "CSS"]} imageLink={'/discordFinder.png'} githubLink={'https://github.com/WilliamKelly00/discordfinder'}/>
-        <ProjectWindow name={"B+ Tree"} tags={["Java", "JUnit", "Data Structures", "Algorithms"]} imageLink={'/inmembTree.png'} githubLink={'https://github.com/WilliamKelly00'}/>
-    </Fade>
+      <Fade delay={100}>
+        <div className={styles.slanted}>
+          <ProjectWindow name={"Next Blog"} tags={["React", "Next", "Firebase", "JavaScript", "CSS"]} imageLink={'/blogFrontpage.png'} githubLink={'https://github.com/WilliamKelly00/nextblog'}/>
+        </div>
+        <h1>Open source full scale<br/> <i>blogging platform</i></h1>
+
+        <h1><i>Lightweight</i> Amazon price tracking web app</h1>
+        <div className={styles.slantedNegative}>
+          <ProjectWindow name={"Price Tracker"} tags={["React", "Firebase", "Api", "JavaScript", "Agile", "CSS"]} imageLink={'/priceFollow.png'} githubLink={'https://github.com/WilliamKelly00/AmazonTracker'}/>
+        </div>
+        <div className={styles.slanted}>
+          <ProjectWindow name={"Discord Finder"} tags={["React", "Redis", "Full-text Search", "JavaScript", "CSS"]} imageLink={'/discordFinder.png'} githubLink={'https://github.com/WilliamKelly00/discordfinder'}/>
+        </div>
+        <h1>Web application to <i>find and share</i> discord communities</h1>
+
+        <h1>In-memory B+ Tree built to <i>scale</i></h1>
+        <div className={styles.slantedNegative}>
+          <ProjectWindow name={"B+ Tree"} tags={["Java", "JUnit", "Data Structures", "Algorithms"]} imageLink={'/inmembTree.png'} githubLink={'https://github.com/WilliamKelly00'}/>
+        </div>
+      </Fade>
       </div>
-    <Image src='/lines.png' alt="" width={1920} height={1080} />
     </div> 
-    </div>
   )
 }

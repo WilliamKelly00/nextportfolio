@@ -34,7 +34,7 @@
   }
   
   .fakeMenu {
-    width: 450px;
+    width: 100%;
     box-sizing: border-box;
     height: 25px;
     /* background-color: #bbb; */
@@ -47,7 +47,7 @@
   .fakeScreen {
     position: relative;
     box-sizing: border-box;
-    width: 450px;
+    width: 100%;
     min-height: 250px;
     margin: 0 auto;
     padding: 20px;
@@ -82,7 +82,7 @@
   .blackbg{
     position: absolute;
     z-index: 3;
-    width: 450px;
+    width: 100%;
     height: 250px;
     margin-left: -20px;
     margin-top: -20px;
@@ -109,14 +109,13 @@
 
   @media only screen and (max-width: 600px) {
     .fakeMenu{
-      width: 250px;
+      width: 100%;
     }
     .fakeScreen{
       width: 100%;
     }
     .title{
-      left: 10px;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
     .blackbg{
       width: 100%;
