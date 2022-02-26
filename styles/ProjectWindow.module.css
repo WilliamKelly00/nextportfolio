@@ -129,3 +129,39 @@
       line-height: 20px;
     }
   }
+
+  /* slanted effect
+
+  .slanted{
+    position: relative;
+    width: 450px;
+    height: 275px;
+    margin: 100px auto;
+    transform: skewy(4deg) skewX(1deg);
+    
+    box-shadow:
+    #1100fc25 -5px 5px,
+    #1100fc20 -10px 10px,
+    #1100fc15 -15px 15px,
+       #1100fc10 -20px 20px,
+       #1100fc05 -25px 25px;
+    
+}
+
+
+.slanted-negative{
+  position: relative;
+  width: 450px;
+  height: 275px;
+  margin: 100px auto;
+  transform: skewy(-4deg) skewX(-1deg);
+
+
+  box-shadow:
+  #FBAE3C40 5px 5px,
+  #FBAE3C30 10px 10px,
+  #FBAE3C20 15px 15px,
+     #FBAE3C10 20px 20px,
+     #FBAE3C05 25px 25px;
+  
+} */

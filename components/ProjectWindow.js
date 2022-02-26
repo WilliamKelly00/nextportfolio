@@ -17,8 +17,8 @@ export default function ProjectWindow({name, tags, imageLink, githubLink}) {
 	  </div>
 	  <div className={styles.fakeScreen}
             onMouseEnter={() => setIsShown(true)}
-          onMouseLeave={() => setIsShown(false)}
-        >
+            onMouseLeave={() => setIsShown(false)}
+            >
       <Image
         layout="fill"
         src={imageLink}
