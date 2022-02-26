@@ -1,10 +1,14 @@
 .writing{
   display: none;
 }
-.body{
+
+.container{
   width: 90%;
   margin: auto;
   overflow: hidden;
+  border-width: 0.3px;
+  border-color: #a1a1a1a8;
+  border-style: none dashed none dashed;
 }
 
 .landingMobile{
@@ -45,18 +49,70 @@
 }
 
 /* align the items such that they create a grid */
-.projectHolder{
+
+
+.projBG{
   position: absolute;
+  z-index: -1;
+}
+
+.projectHolder{
+  position: relative;
+  width: 90%;
 
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 75px; 
-  grid-column-gap: 125px;
+  /* grid-row-gap: 75px; 
+  grid-column-gap: 125px; */
   margin-left: 12%;
   margin-top: 5%;
 }
+
+
+
+.projectHolder h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20%;
+  margin-bottom: 0;
+}
+
+    /* slanted effect */
+
+    .slanted{
+      position: relative;
+      width: 450px;
+      height: 275px;
+      margin: 100px 5%;
+      transform: skewy(4deg) skewX(1deg);
+      
+      box-shadow:
+      #1100fc25 -5px 5px,
+      #1100fc20 -10px 10px,
+      #1100fc15 -15px 15px,
+         #1100fc10 -20px 20px,
+         #1100fc05 -25px 25px;
+      
+  }
+  
+    .slantedNegative{
+      position: relative;
+      width: 450px;
+      height: 275px;
+      margin: 100px auto;
+      transform: skewy(-4deg) skewX(-1deg);
+    
+    
+      box-shadow:
+      #FBAE3C40 5px 5px,
+      #FBAE3C30 10px 10px,
+      #FBAE3C20 15px 15px,
+        #FBAE3C10 20px 20px,
+        #FBAE3C05 25px 25px;
+      
+    }
 
 .imageProjects{
   width: 90%;
@@ -73,6 +129,7 @@
   left: 40%;
 }
 
+
 .wavesWriting{
   position: absolute;
   z-index: 10;
@@ -82,7 +139,7 @@
 }
 
 .contact{
-  width: 90%;
+  width: 100%;
   margin: auto;
 
   border-width: 0.3px;
