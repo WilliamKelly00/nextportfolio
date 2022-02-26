@@ -1,12 +1,26 @@
-.svg {
+/* .svg {
     position: relative;
-    margin-top: 100px;
-    width: 900px;
-    height: 300px;
+    height: 100vh;
+    width: 100%;
     margin: auto;
     background-color: #140021;
   }
-  .moving {
+  /* .moving {
     position: absolute;
     top: -150px;
+  } */ 
+
+  .svg {
+    background-color: #242424;
+    height: 100%;
+    width: 250%;
+    margin-left: -75%;
+
+    box-shadow: 40px -30px #002affd8;
+    opacity: 0.98;
   }
+  /* .moving {
+   margin-top: -0%;
+   margin-left: -20%;
+
+  } */

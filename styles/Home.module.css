@@ -132,25 +132,23 @@
 }
 
 
-.contactSvg{
-  position: absolute;
-  z-index: 10;
-  box-shadow: 40px -30px #002affd8;
-  opacity: 0.98;
-}
 
 .contactWriting{
   position: relative;
   z-index: 10;
+  top: -450px;
+
+
   color: rgba(255, 255, 255, 0.897);
-  top: -240px;
-  margin-left: 40%;
+
+  /* top: -240px;
+  margin-left: 40%; */
 }
 
 .contactButtons{
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
+  position: relative;
+  z-index: 10;
+  top: -150px;
 }
 
 

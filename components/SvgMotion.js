@@ -40,8 +40,6 @@ export default function SvgMotion() {
     <div className={styles.svg}>
         <motion.svg className={styles.moving}
             initial="start"
-            width="900"
-            height="600"
             viewBox="0 0 900 600"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
