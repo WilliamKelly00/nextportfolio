@@ -45,7 +45,7 @@ export default function SvgMotion() {
             viewBox="0 0 900 600"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            whileHover="end"
+            animate="end"
         >
             <motion.path
             variants={bar1}
