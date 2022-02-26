@@ -16,18 +16,18 @@ export default function Projects() {
         <div className={styles.slanted}>
           <ProjectWindow name={"Next Blog"} tags={["React", "Next", "Firebase", "JavaScript", "CSS"]} imageLink={'/blogFrontpage.png'} githubLink={'https://github.com/WilliamKelly00/nextblog'}/>
         </div>
-        <h1>Hello world!</h1>
+        <h1>Open source full scale<br/> <i>blogging platform</i></h1>
 
-        <h1>Hello world!</h1>
+        <h1><i>Lightweight</i> Amazon price tracking web app</h1>
         <div className={styles.slantedNegative}>
           <ProjectWindow name={"Price Tracker"} tags={["React", "Firebase", "Api", "JavaScript", "Agile", "CSS"]} imageLink={'/priceFollow.png'} githubLink={'https://github.com/WilliamKelly00/AmazonTracker'}/>
         </div>
         <div className={styles.slanted}>
           <ProjectWindow name={"Discord Finder"} tags={["React", "Redis", "Full-text Search", "JavaScript", "CSS"]} imageLink={'/discordFinder.png'} githubLink={'https://github.com/WilliamKelly00/discordfinder'}/>
         </div>
-        <h1>Hello world!</h1>
+        <h1>Web application to <i>find and share</i> discord communities</h1>
 
-        <h1>Hello world!</h1>
+        <h1>In-memory B+ Tree built to <i>scale</i></h1>
         <div className={styles.slantedNegative}>
           <ProjectWindow name={"B+ Tree"} tags={["Java", "JUnit", "Data Structures", "Algorithms"]} imageLink={'/inmembTree.png'} githubLink={'https://github.com/WilliamKelly00'}/>
         </div>

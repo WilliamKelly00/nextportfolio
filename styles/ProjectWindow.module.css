@@ -34,7 +34,7 @@
   }
   
   .fakeMenu {
-    width: 450px;
+    width: 100%;
     box-sizing: border-box;
     height: 25px;
     /* background-color: #bbb; */
@@ -47,7 +47,7 @@
   .fakeScreen {
     position: relative;
     box-sizing: border-box;
-    width: 450px;
+    width: 100%;
     min-height: 250px;
     margin: 0 auto;
     padding: 20px;
@@ -82,7 +82,7 @@
   .blackbg{
     position: absolute;
     z-index: 3;
-    width: 450px;
+    width: 100%;
     height: 250px;
     margin-left: -20px;
     margin-top: -20px;
@@ -109,14 +109,13 @@
 
   @media only screen and (max-width: 600px) {
     .fakeMenu{
-      width: 250px;
+      width: 100%;
     }
     .fakeScreen{
       width: 100%;
     }
     .title{
-      left: 10px;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
     .blackbg{
       width: 100%;
@@ -129,39 +128,3 @@
       line-height: 20px;
     }
   }
-
-  /* slanted effect
-
-  .slanted{
-    position: relative;
-    width: 450px;
-    height: 275px;
-    margin: 100px auto;
-    transform: skewy(4deg) skewX(1deg);
-    
-    box-shadow:
-    #1100fc25 -5px 5px,
-    #1100fc20 -10px 10px,
-    #1100fc15 -15px 15px,
-       #1100fc10 -20px 20px,
-       #1100fc05 -25px 25px;
-    
-}
-
-
-.slanted-negative{
-  position: relative;
-  width: 450px;
-  height: 275px;
-  margin: 100px auto;
-  transform: skewy(-4deg) skewX(-1deg);
-
-
-  box-shadow:
-  #FBAE3C40 5px 5px,
-  #FBAE3C30 10px 10px,
-  #FBAE3C20 15px 15px,
-     #FBAE3C10 20px 20px,
-     #FBAE3C05 25px 25px;
-  
-} */
