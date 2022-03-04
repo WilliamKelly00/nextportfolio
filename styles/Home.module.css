@@ -169,6 +169,7 @@
         height: 275px;
         margin: 100px 5%;
         transform: skewy(4deg) skewX(1deg);
+        -webkit-backface-visibility: hidden;
         
         box-shadow:
         #1100fc25 -5px 5px,
@@ -192,6 +193,8 @@
         height: 275px;
         margin: 100px auto;
         transform: skewy(-4deg) skewX(-1deg);
+        -webkit-backface-visibility: hidden;
+
       
       
         box-shadow:
