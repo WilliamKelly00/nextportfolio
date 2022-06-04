@@ -27,6 +27,9 @@ export default function Home() {
       backgroundPosition: "center"
     }}>
       <Landing/>
+      <div className={styles.arlink}>
+        <a href='https://williamkelly00.github.io/resume_spray/'>Explore my portfolio in Augmented Reality</a>
+      </div>
       <Projects/>
       <TwoWaves/>
       <Cards/>      
