@@ -151,7 +151,18 @@
   top: -150px;
 }
 
-
+.arlink{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right top, #d64f95, #d451a5, #ce55b5, #c65ac5, #ba61d6, #ac6be2, #9d74ed, #8a7df6, #7688fb, #6292fd, #509afd, #40a2fb);
+  color: white;
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding: 15px;
+  visibility: hidden;
+}
 @media only screen and (min-width: 600px) {
 
   .projectHolder h1{
@@ -234,6 +245,10 @@
     margin: auto;
   }
 
+  .arlink{
+    visibility: visible;
+  }
+
   /* Landing */
   #video{
     display: none;
@@ -288,9 +303,10 @@
   
   /* Projects */
   .projectHolder{
+    padding-top: 10px;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    column-gap: 5px;
     grid-template-rows: auto;
     margin: 0;
   }
@@ -301,9 +317,9 @@
     border: none;
   }
   
-  .lines{
+  /* .lines{
     display: none;
-  }
+  } */
 
   /* Contact */
   .contact{
