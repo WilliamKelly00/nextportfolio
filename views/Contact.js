@@ -14,7 +14,7 @@ export default function Contact() {
         </div>
         <div className={styles.contactButtons}>
           <AwesomeButtonSocial type="github" href="https://github.com/WilliamKelly00" target="_blank"></AwesomeButtonSocial>
-          <AwesomeButtonSocial type="linkedin" url="https://www.linkedin.com/in/william-kelly-65b1b5210/"></AwesomeButtonSocial>
+          <AwesomeButtonSocial type="linkedin" url="https://www.linkedin.com/in/williamkelly00/"></AwesomeButtonSocial>
           <AwesomeButton type="primary" href="mailto:williammkelly00@gmail.com">📨</AwesomeButton>
         </div>
       </div>
